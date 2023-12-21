@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="container mx-auto px-4">
+        <!-- Logo -->
+        <div class="py-4">
+            <img src="https://assets-global.website-files.com/630f1b0a09deec5ea5b8d8a9/6571d0f29b794cc0c0082a02_together-logo-2.svg" alt="Together Logo" class="h-8">
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex flex-col space-y-6">
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <p>To integrate the chat interface with your own endpoint, you would typically need to modify the frontend code and possibly make changes to the backend code. Here's a general overview of the files you may need to modify:</p>
+                <ol class="list-decimal ml-6 mt-4">
+                    <li>Frontend code: You would need to modify the client-side code responsible for rendering the chat interface and handling user input. This could include HTML, CSS, and JavaScript files. The specific files to modify would depend on your frontend framework or setup.</li>
+                    <li>Backend code: If you have a backend server that interacts with the OpenAI API or your custom endpoint, you may need to modify the server-side code. This could involve making changes to routes, controllers, or handlers responsible for making API calls and processing responses.</li>
+                    <li>Integration code: You would need to write code to send user messages from the frontend to your endpoint and receive responses back. This code would typically be part of your frontend JavaScript code and would involve making HTTP requests or WebSocket connections to your backend server.</li>
+                    <li>API configuration: Depending on the API you're using (e.g., OpenAI API), you may need to configure authentication credentials, endpoints, or other API-specific settings. This configuration is typically done in your backend code.</li>
+                </ol>
+                <p>It's important to note that the specific files and modifications required would vary depending on your application's architecture, programming language, and framework. It's recommended to consult the documentation or resources specific to the tools and technologies you are using for detailed instructions on how to integrate the chat interface with your endpoint.</p>
+            </div>
+
+            <div class="flex justify-between items-center bg-gray-800 p-4 rounded-lg">
+                <button class="text-blue-500">
+                    <i class="fas fa-sync-alt"></i> Regenerate response
+                </button>
+                <button class="text-blue-500">
+                    <i class="fas fa-share"></i> Share
+                </button>
+            </div>
+
+            <div class="flex items-center bg-gray-800 p-4 rounded-lg">
+                <input type="text" placeholder="Send a message." class="bg-gray-700 flex-1 p-2 rounded text-white placeholder-gray-400">
+                <button class="text-blue-500 ml-4">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Include any JavaScript here if necessary
+    </script>
+</body>
+</html>
